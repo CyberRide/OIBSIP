@@ -1,4 +1,6 @@
 # utils.py
+# Author: CyberRide
+# GitHub: https://github.com/CyberRide/
 import re
 
 def validate_location(location):

@@ -1,4 +1,7 @@
 # main.py
+# Author: CyberRide
+# GitHub: https://github.com/CyberRide/
+
 from api import get_weather
 # from gui import run_gui
 from utils import validate_location, display_error_message

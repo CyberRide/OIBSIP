@@ -1,4 +1,6 @@
 # gui.py
+# Author: CyberRide
+# GitHub: https://github.com/CyberRide/
 import os
 import tkinter as tk
 from api import get_weather
@@ -35,7 +37,7 @@ def fetch_weather():
         root.update()
 
         # API key
-        api_key = "ac32dbeb47f94a0a9c9b512d4ca682c0"
+        api_key = "Your Api Key"
         
         # Fetch weather data using the API
         weather_data = get_weather(api_key, location)

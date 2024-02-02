@@ -1,4 +1,6 @@
 # api.py
+# Author: CyberRide
+# GitHub: https://github.com/CyberRide/
 import requests
 
 print(requests.__version__)

@@ -1,0 +1,37 @@
+[
+  {
+    "date": "2024-02-02 02:39:47",
+    "weight": 34.0,
+    "height": 45.0,
+    "bmi": 0.016790123456790124,
+    "category": "Underweight"
+  },
+  {
+    "date": "2024-02-02 02:40:07",
+    "weight": 34.0,
+    "height": 41.0,
+    "bmi": 0.020226055919095775,
+    "category": "Underweight"
+  },
+  {
+    "date": "2024-02-02 02:40:10",
+    "weight": 34.0,
+    "height": 47.0,
+    "bmi": 0.015391579900407425,
+    "category": "Underweight"
+  },
+  {
+    "date": "2024-02-02 02:40:13",
+    "weight": 34.0,
+    "height": 1.0,
+    "bmi": 34.0,
+    "category": "Obese"
+  },
+  {
+    "date": "2024-02-02 02:40:17",
+    "weight": 34.0,
+    "height": 3.0,
+    "bmi": 3.7777777777777777,
+    "category": "Underweight"
+  }
+]
