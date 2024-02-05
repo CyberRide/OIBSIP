@@ -47,4 +47,4 @@ Description: Create a simple chat application that enables users to send and rec
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt).
