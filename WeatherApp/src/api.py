@@ -12,7 +12,7 @@ def get_weather(api_key, location):
     params = {"q": location, "appid": api_key, "units": "metric"}  # Use "imperial" for Fahrenheit
     
     # Make a GET request to the OpenWeatherMap API
-    response = requests.get(base_url, params=params)
+    response = requests.get(base_url, params=params, timeout=60)
 
     # Check if the request was successful (status code 200)
     if response.status_code == 200:
