@@ -1,10 +1,10 @@
 # gui.py
 
-import random
 import string
 import tkinter as tk
 from tkinter import messagebox
 import pyperclip
+import secrets
 
 class AdvancedPasswordGenerator:
     def __init__(self, master):
@@ -86,15 +86,15 @@ class AdvancedPasswordGenerator:
 
         # Password complexity rules
         if self.complexity_var.get() == "Low":
-            return ''.join(random.choice(letters + numbers + symbols) for _ in range(length))
+            return ''.join(secrets.SystemRandom().choice(letters + numbers + symbols) for _ in range(length))
         elif self.complexity_var.get() == "Medium":
-            return ''.join(random.choice(letters + numbers + symbols) for _ in range(length // 2)) + \
-                   ''.join(random.choice(letters) for _ in range(length // 4)) + \
-                   ''.join(random.choice(numbers) for _ in range(length // 4))
+            return ''.join(secrets.SystemRandom().choice(letters + numbers + symbols) for _ in range(length // 2)) + \
+                   ''.join(secrets.SystemRandom().choice(letters) for _ in range(length // 4)) + \
+                   ''.join(secrets.SystemRandom().choice(numbers) for _ in range(length // 4))
         else:  # High complexity
-            return ''.join(random.choice(letters) for _ in range(length // 3)) + \
-                   ''.join(random.choice(numbers) for _ in range(length // 3)) + \
-                   ''.join(random.choice(symbols) for _ in range(length // 3))
+            return ''.join(secrets.SystemRandom().choice(letters) for _ in range(length // 3)) + \
+                   ''.join(secrets.SystemRandom().choice(numbers) for _ in range(length // 3)) + \
+                   ''.join(secrets.SystemRandom().choice(symbols) for _ in range(length // 3))
 
     def validate_input(self, length, use_letters, use_numbers, use_symbols):
         # Validate password length
