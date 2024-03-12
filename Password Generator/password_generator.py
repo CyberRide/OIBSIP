@@ -1,8 +1,8 @@
 # password_generator.py
 
 # Importing necessary modules
-import random
 import string
+import secrets
 
 # Function to generate a random password based on user-defined criteria
 def generate_password(length, use_letters=True, use_numbers=True, use_symbols=True):
@@ -21,7 +21,7 @@ def generate_password(length, use_letters=True, use_numbers=True, use_symbols=Tr
         raise ValueError("At least one character set (letters, numbers, symbols) must be selected.")
     
     # Generating the password using the selected character set
-    password = ''.join(random.choice(characters) for _ in range(length))
+    password = ''.join(secrets.SystemRandom().choice(characters) for _ in range(length))
     return password
 
 
